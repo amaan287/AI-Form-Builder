@@ -6,17 +6,10 @@ First, run the development server:
 
 ```bash
 npm init
-# or
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Open [https://drive.google.com/file/d/14wUBDgAxtquZVZrPNI9o8i0x27Xk6sPt/view?usp=drivesdk] with your browser to see the video of the developed app.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
