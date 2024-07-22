@@ -9,7 +9,7 @@ npm init
 npm run dev
 
 
-Open [https://drive.google.com/file/d/14wUBDgAxtquZVZrPNI9o8i0x27Xk6sPt/view?usp=drivesdk] with your browser to see the video of the developed app.
+Open [`https://drive.google.com/file/d/14wUBDgAxtquZVZrPNI9o8i0x27Xk6sPt/view?usp=drivesdk`] with your browser to see the video of the developed app.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
