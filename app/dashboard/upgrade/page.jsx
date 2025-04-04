@@ -8,22 +8,22 @@ function Upgrade() {
     const {user}=useUser();
 
   return (
-    <div className='p-10'>
+    <div className='p-10 min-h-screen'>
         <div className="mx-auto max-w-3xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-center md:gap-8">
   
     {PricingPlan.map((item,index)=>(
         <div key={index} className="rounded-2xl border border-gray-200 p-6 shadow-sm sm:px-8 lg:p-12">
       <div className="text-center">
-        <h2 className="text-lg font-medium text-gray-900">
+        <h2 className="text-lg font-medium text-gray-900 dark:text-white">
           {item.duration}
           <span className="sr-only">Plan</span>
         </h2>
 
         <p className="mt-2 sm:mt-4">
-          <strong className="text-3xl font-bold text-gray-900 sm:text-4xl"> {item.price}$ </strong>
+          <strong className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl"> {item.price}$ </strong>
 
-          <span className="text-sm font-medium text-gray-700">/{item.duration}</span>
+          <span className="text-sm font-medium text-gray-700 dark:text-white">/{item.duration}</span>
         </p>
       </div>
 
@@ -40,7 +40,7 @@ function Upgrade() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
           </svg>
 
-          <span className="text-gray-700"> Unlimted AI forms </span>
+          <span className="text-gray-700 dark:text-white  "> Unlimted AI forms </span>
         </li>
 
         <li className="flex items-center gap-1">
@@ -55,7 +55,7 @@ function Upgrade() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
           </svg>
 
-          <span className="text-gray-700"> Unlimted User Form Responses </span>
+          <span className="text-gray-700 dark:text-white"> Unlimted User Form Responses </span>
         </li>
 
         <li className="flex items-center gap-1">
@@ -70,7 +70,7 @@ function Upgrade() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
           </svg>
 
-          <span className="text-gray-700"> Email support </span>
+          <span className="text-gray-700 dark:text-white"> Email support </span>
         </li>
 
         <li className="flex items-center gap-1">
@@ -85,7 +85,7 @@ function Upgrade() {
             <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
           </svg>
 
-          <span className="text-gray-700"> App Tubeguruji.Com App Access </span>
+          <span className="text-gray-700 dark:text-white"> AI Form Builder </span>
         </li>
       </ul>
 

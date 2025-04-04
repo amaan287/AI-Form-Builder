@@ -21,14 +21,14 @@ A modern web application that allows users to create and manage forms using AI a
 - **ORM**: Drizzle ORM
 - **Authentication**: Clerk
 - **AI Integration**: Custom AI session management
-- **Styling**: Tailwind CSS, Shadcn UI components
+- **Styling**: Tailwind CSS, Shadcn UI,Magic UI,Daisy UI components
 - **Form Management**: Custom form builder with JSON schema
 
 ## Getting Started
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - Neon Database account
 - Clerk account
@@ -36,12 +36,14 @@ A modern web application that allows users to create and manage forms using AI a
 ### Installation
 
 1. Clone the repository:
+
 ```bash
-git clone https://github.com/yourusername/ai-form-builder.git
-cd ai-form-builder
+git clone https://github.com/amaan287/AI-Form-Builder.git
+cd AI-Form-Builder
 ```
 
 2. Install dependencies:
+
 ```bash
 npm install
 # or
@@ -49,7 +51,8 @@ yarn install
 ```
 
 3. Set up environment variables:
-Create a `.env.local` file in the root directory with the following variables:
+   Create a `.env` file in the root directory with the following variables:
+
 ```env
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
@@ -57,11 +60,13 @@ NEXT_PUBLIC_DATABASE_URL_CONFIG=your_neon_database_url
 ```
 
 4. Initialize the database:
+
 ```bash
 npx drizzle-kit push
 ```
 
 5. Start the development server:
+
 ```bash
 npm run dev
 # or
@@ -88,6 +93,7 @@ ai-form-builder/
 ## Usage
 
 1. **Create a Form**
+
    - Navigate to the dashboard
    - Click "Create Form"
    - Enter a description of your form
@@ -95,12 +101,14 @@ ai-form-builder/
    - Customize the form as needed
 
 2. **Edit a Form**
+
    - Select a form from the dashboard
    - Modify form fields, labels, and options
    - Change form theme and style
    - Save changes
 
 3. **Share a Form**
+
    - Click the share button on any form
    - Copy the generated link
    - Share with respondents

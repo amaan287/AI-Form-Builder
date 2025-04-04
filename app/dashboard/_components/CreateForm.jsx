@@ -78,8 +78,8 @@ function CreateForm() {
     }
 
     return (
-        <div>
-            <Button onClick={()=>setOpenDailog(true)}>+ Create Form</Button>
+        <div className='dark:text-white'>
+            <Button  className='dark:text-white' onClick={()=>setOpenDailog(true)}>+ Create Form</Button>
             <Dialog open={openDialog}>
                 <DialogContent>
                     <DialogHeader>

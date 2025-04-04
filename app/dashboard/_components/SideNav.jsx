@@ -8,6 +8,7 @@ import { LibraryBig, LineChart, MessageSquare, Shield } from 'lucide-react'
 import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
+import CreateForm from './CreateForm';
 
 function SideNav() {
     const menuList=[
@@ -23,12 +24,7 @@ function SideNav() {
             icon:MessageSquare,
             path:'/dashboard/responses'
         },
-        {
-            id:1,
-            name:'Analytics',
-            icon:LineChart,
-            path:'/dashboard/analytics'
-        },
+        
         {
             id:1,
             name:'Upgrade',
@@ -74,11 +70,13 @@ function SideNav() {
             ))}
         </div>
         <div className='fixed bottom-7 p-6 w-64 '>
-            <Button className="w-full">+ Create Form</Button>
+        <div className='mb-7 w-full flex justify-center'>
+        <CreateForm/>
+        </div>
             <div className='my-7'>
             <Progress value={PercFileCreated} />
-            <h2 className='text-sm mt-2 text-gray-600'><strong>{formList?.length} </strong>Out of <strong>3</strong> File Created</h2>
-            <h2 className='text-sm mt-3 text-gray-600'>Upgrade your plan for unlimted AI form build</h2>
+            <h2 className='text-sm mt-2 text-gray-600 dark:text-white'> <strong>{formList?.length} </strong>Out of <strong>3</strong> File Created</h2>
+            <h2 className='text-sm mt-3 text-gray-600 dark:text-white'>Upgrade your plan for unlimted AI form build</h2>
             
             </div>
         </div>

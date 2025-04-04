@@ -65,8 +65,8 @@ function FormListItem({formRecord,jsonForm,refreshData}) {
                     </AlertDialog>
 
             </div>
-            <h2 className='text-lg text-black'>{jsonForm?.formTitle}</h2>
-            <h2 className='text-sm text-gray-500'>{jsonForm?.formHeading}</h2>
+            <h2 className='text-lg text-black font-bold dark:text-white'>{jsonForm?.formTitle}</h2>
+            <h2 className='text-sm text-gray-500 dark:text-white'>{jsonForm?.formHeading}</h2>
             <hr className='my-4'></hr>
             <div className='flex justify-between'>
             <RWebShare
@@ -81,7 +81,7 @@ function FormListItem({formRecord,jsonForm,refreshData}) {
 
           </RWebShare>
                 <Link href={'/edit-form/'+formRecord?.id}>
-                    <Button className="flex gap-2"  size="sm"> <Edit className='h-5 w-5'/> Edit</Button>
+                    <Button className="flex gap-2 dark:text-white"  size="sm"> <Edit className='h-5 w-5'/> Edit</Button>
                 </Link>
             </div>
         </div>
