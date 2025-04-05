@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { useUser,SignInButton } from "@clerk/nextjs";
+import { useUser, SignInButton } from "@clerk/nextjs";
 import { BlurFade } from "@/components/magicui/blur-fade";
 import { ShimmerButton } from "@/components/magicui/shimmer-button";
 import { WordRotate } from "@/components/magicui/word-rotate";
@@ -27,10 +27,10 @@ function Hero() {
                 </h1>
               </BlurFade>
               <BlurFade delay={0.25 * 2} inView>
-                <Link href={'/dashboard'}>
-                <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl sm:block">
-                  Generate Forms using AI
-                </h1>
+                <Link href={"/dashboard"}>
+                  <h1 className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl sm:block">
+                    Generate Forms using AI
+                  </h1>
                 </Link>
                 <WordRotate
                   duration={3500}

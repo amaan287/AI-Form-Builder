@@ -15,10 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-    <html lang="en" >
-      <body className={inter.className}>
-        <Header/>
-        <ThemeProvider
+      <html lang="en" >
+        <body className={inter.className}>
+          <Header />
+          <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
@@ -27,9 +27,9 @@ export default function RootLayout({ children }) {
             {children}
             <Toaster />
           </ThemeProvider>
-        <Toaster />
-      </body>
-    </html>
+          <Toaster />
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
